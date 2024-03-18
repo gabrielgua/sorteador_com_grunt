@@ -1,0 +1,66 @@
+@ff-primary: 'Roboto', sans-serif;
+@ff-title: 'Lobster', cursive;
+
+@clr-text: #FFF;
+@clr-bg: #EB3B5A;
+@clr-btn: #F7B731;
+@clr-btn-text: #000;
+
+body {
+    background-color: @clr-bg;
+    font-family: @ff-primary;
+    color: @clr-text;
+}
+
+h1 {
+    font-family: @ff-title;
+    font-size: 3em;
+}
+
+main {
+    width: min(960px, 80%);
+    margin-inline: auto;
+    font-size: 2em;
+    text-align: center;
+}
+
+button {
+    padding: 1rem;
+    cursor: pointer;
+    font-family: @ff-primary;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    background-color: @clr-btn;
+    color: @clr-btn-text;
+}
+
+input {
+    display: block;
+    width: 80px;
+    font-size: inherit;
+    padding: .5rem;
+    margin: 1rem;
+    margin-inline: auto;
+    border: none;
+    background-color: transparent;
+    color: @clr-text;
+    border-bottom: 3px solid @clr-text;
+}
+
+.resultado {
+    padding: 1rem;
+    border: 5px dotted @clr-text;
+    margin-block: 1rem;
+    margin-inline: auto;
+    text-align: center;
+    width: min(960px, 80%);
+    display: none;
+
+    span {
+        display: block;
+        font-weight: bold;
+        font-size: 8em;
+    }
+}
